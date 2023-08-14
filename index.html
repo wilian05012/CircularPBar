@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Circular Progress Bar Component Test Bed</title>
+</head>
+<body>
+    <h1 class="main-title">Progress Bar Component Test Bed</h1>
+    <div class="container">
+        <form action="#" method="get">
+            <div class="title-bar">
+                <span>Move the track ball</span>
+            </div>
+            <div class="form-content">
+                <input type="range" name="numericValue" id="trackBar"
+                        min="0" max="100" value="50" step="1"/>
+            </div>
+        </form>
+        <div class="test-results">
+           <circular-pbar id="progressBar" min="0" max="100" value="50"></circular-pbar>
+        </div>
+    </div>
+
+    <script src="main.js" defer type="module"></script>
+</body>
+</html>

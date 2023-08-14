@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-accent: blue;
+    --clr-bg : white;
+    --clr-fg: black;
+}
+
+body {
+    font-family: sans-serif;
+}
+.main-title {
+    background: var(--clr-accent);
+    color: var(--clr-bg);
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    margin: 0 2rem;
+}
+
+form {
+    border: solid thin var(--clr-fg);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+form > .title-bar {
+    background: var(--clr-accent);
+    color: var(--clr-bg);
+    padding: 0.5rem 1rem;
+}
+form > .form-content {
+    display: flex;
+    padding: 2rem;
+}
+input[type='range'] { flex: 1 1 auto; }
+
+.test-results {
+    border: solid thin var(--clr-fg);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+/* Circular PBar */
